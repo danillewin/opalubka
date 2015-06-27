@@ -9,13 +9,11 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      style: {
         files: 'style/*.css',
         tasks: ['style'],
         options: {
           debounceDelay: 250,
         },
-      }
     },
   });
 
