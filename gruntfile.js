@@ -8,18 +8,40 @@ module.exports = function(grunt) {
         }
       }
     },
+    uglify: {
+        bundle: {
+            options: {
+              sourceMap: true,
+              sourceMapName: 'script.map'
+            },
+            files: {
+            'script.min.js': ['script/app/**/*.js']
+            }
+        }
+    },
     watch: {
-        files: 'style/*.css',
-        tasks: ['style'],
-        options: {
-          debounceDelay: 250,
-        },
+        scripts: {
+            files: 'script/app/**/*.js',
+            tasks: ['script'],
+            options: {
+              debounceDelay: 250,
+            },
+          },
+          style: {
+            files: 'style/*.css',
+            tasks: ['style'],
+            options: {
+              debounceDelay: 250,
+            },
+          }
     },
   });
 
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
-
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+    
   grunt.registerTask('style', ['cssmin']);
-  grunt.registerTask('default', ['style']);
+  grunt.registerTask('script', ['uglify:bundle']);
+  grunt.registerTask('default', ['style', 'script']);
 };

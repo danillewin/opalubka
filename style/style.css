@@ -5,7 +5,9 @@ body {
 
 .container{
     width:940px;
-    margin:auto
+    margin:auto;
+    position: relative;
+    padding: 60px 0 0 0;
 }
 
 .headline {
@@ -31,13 +33,16 @@ body {
     }
 
 .header {
-    width: 100%;
+    width: 940px;
+    z-index: 1;
     height: 60px;
     background-image: linear-gradient(to right,#aa0114 0,#aa0114 10px,#222 10px,#222 100%);
-    position: relative;
+    position: fixed;
     text-align: right;
     padding: 0 40px;
     box-sizing: border-box;
+    transform: translate(-50%, 0);
+    left: 50%;
     margin-bottom: 3px;
 }
 
@@ -54,14 +59,23 @@ body {
         transform: translateY(-50%)
     }
 
-    .header__item:hover {
-        color: #cc3333;
-    }
+        .header__item:hover {
+            color: #cc3333;
+        }
+
+        .header__item_active,
+        .header__item_active:hover {
+            color: #cc3333;
+            cursor: default;
+        }
 
 .slide {
     background-image: url(img/slide.jpg);
     height: 390px;
-    position: relative;
+    position: relative;  
+    padding-top: 3px;
+    background-position: 0 3px;
+    background-repeat: no-repeat;
 }
 
     .slide__text {
@@ -182,5 +196,7 @@ body {
     height: 45px;
     background: #aa0114;
 }
+
+
 
 

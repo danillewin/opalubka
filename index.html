@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Опалубка</title>
@@ -6,50 +7,61 @@
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
 </head>
 <body>
+   <div class="header">
+        <a class="header__item header__item_active" href="#about">
+            о нас
+        </a>
+        <a class="header__item" href="#catalog">
+            продукция
+        </a>
+        <a class="header__item" href="#profit">
+            преимущества
+        </a>
+        <a class="header__item" href="#contacts">
+            контакты
+        </a>
+    </div>
     <div class="container">
         <div class="promo">
             <div class="promo__log"></div>
             <div class="promo__contacts"></div>
         </div>
-        <div class="header">
-            <a href="#" class="header__item" data-section="about">
-                о нас
-            </a>
-            <a href="#" class="header__item" data-section="catalog">
-                продукция
-            </a>
-            <a href="#" class="header__item" data-section="contacts">
-                контакты
-            </a>
-        </div>
-        <div class="slide">
+        <div class="main__section slide" name="#about">
             <div class="slide__text">
             Компания <b>«PLENTRY»</b> – один из ведущих мировых поставщиков опалубки, лесов и страховочных систем. С 1929 года системы Hünnebeck служат символом качества, экономической целесообразности и ориентации на создание решений. Главный приоритет компании – увеличение производительности работ на строительных площадках при помощи практичных, безопасных и простых решений
             </div>
         </div>
-        <div class="catalog">
+        <div class="main__section catalog"  name="#catalog">
            <div class="catalog__headline headline">Продукция</div>
-            <div class="catalog__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur itaque atque, omnis voluptates ea dignissimos totam illo, reiciendis perferendis suscipit laborum facilis explicabo! Reiciendis eveniet assumenda ex, odio accusantium nisi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus nihil qui doloremque reiciendis, dolorem quia, provident similique, consequatur modi ullam aperiam praesentium natus repellat officiis quas repudiandae dolor totam magni. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore repellendus ipsam repellat nemo reiciendis ex soluta dolore provident consectetur expedita sapiente, cumque. Officiis nisi, placeat est laudantium recusandae amet ea.</div>
+            <div class="catalog__text">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur itaque atque, omnis voluptates ea dignissimos totam illo, reiciendis perferendis suscipit laborum facilis explicabo! Reiciendis eveniet                  assumenda ex, odio accusantium nisi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus nihil qui doloremque reiciendis, dolorem quia, provident similique, consequatur modi ullam aperiam praesentium natus repellat officiis quas repudiandae dolor totam magni. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore repellendus ipsam repellat nemo reiciendis ex soluta dolore provident consectetur expedita sapiente, cumque. Officiis nisi, placeat est laudantium recusandae amet ea.
+            </div>
             <div class="catalog__link-container">
                 <a href="" class="catalog__link">Перейти в Каталог</a>
             </div>
         </div>
-        <div class="about">
+        <div class="main__section about" name="#profit">
            <div class="about__headline headline">Наши преимущества</div>
             <div class="about__item">
                 <img src="img/about__wall.png" alt="" class="about__img">
-                <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores veritatis minus in, illo, assumenda adipisci, libero provident corporis ea culpa distinctio. Eaque illum adipisci perferendis consequuntur quisquam, fugiat laboriosam qui.</div>
+                <div class="about__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores veritatis minus in, illo, assumenda adipisci, libero provident corporis ea culpa distinctio. Eaque illum adipisci perferendis consequuntur quisquam, fugiat laboriosam qui.
+                </div>
             </div>
             <div class="about__item">
                 <img src="img/about__money.png" alt="" class="about__img">
-                <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, ratione doloremque! Sapiente distinctio facilis quis alias recusandae quia doloribus ad, esse itaque, animi tempora laboriosam a fugit asperiores rem natus!</div>
+                <div class="about__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, ratione doloremque! Sapiente distinctio facilis quis alias recusandae quia doloribus ad, esse itaque, animi tempora laboriosam a fugit asperiores rem natus!
+                </div>
             </div>
             <div class="about__item">
                 <img src="img/about__clock.png" alt="" class="about__img">
-                <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem voluptatem, saepe sit quos blanditiis tempore nam nobis, qui quae molestiae sunt exercitationem modi dolores sapiente cum voluptate eveniet, totam ullam.</div>
+                <div class="about__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem voluptatem, saepe sit quos blanditiis tempore nam nobis, qui quae molestiae sunt exercitationem modi dolores sapiente cum voluptate eveniet, totam ullam.
+                </div>
             </div>
         </div>
-        <div class="contacts">
+        <div class="main__section contacts" name="#contacts">
             <div class="contacts__headline headline">
                 Как нас найти
             </div>
@@ -69,7 +81,7 @@
                 </div>
                 <div class="contacts__section">
                     <div class="contacts__section-header headline headline_mini">E-mail</div>
-                    <div class="contacts__section-content">opalubka<span style="color: #aa0114">@</span>plentry.com</div>
+                    <div class="contacts__section-content">opalubka<span style="color: #aa0114">@</span></div>
                 </div>
             </div>
         </div>
@@ -78,6 +90,7 @@
             <div class="footer__plentry"> </div>
         </div>
     </div>
-
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="script.min.js"></script>
 </body>
 </html>
