@@ -41,11 +41,9 @@ body {
     text-align: right;
     padding: 0 40px;
     box-sizing: border-box;
-    transform: -webkit-translate(-50%, 0);
-    transform:    -moz-translate(-50%, 0);
-    transform:     -ms-translate(-50%, 0);
-    transform:      -o-translate(-50%, 0);
-    transform:         translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
     left: 50%;
     margin-bottom: 3px;
 }
@@ -60,11 +58,9 @@ body {
         position: relative;
         font-size: 26px;
         top: 50%;
-        transform: -webkit-translate(0, -50%);
-        transform:    -moz-translate(0, -50%);
-        transform:     -ms-translate(0, -50%);
-        transform:      -o-translate(0, -50%);
-        transform:         translate(0, -50%);
+        -webkit-transform: translate(0, -50%);
+            -ms-transform: translate(0, -50%);
+                transform: translate(0, -50%);
     }
 
         .header__item:hover {
@@ -94,11 +90,9 @@ body {
       top: 50%;
       padding: 40px;
       text-transform: uppercase;
-      transform: -webkit-translate(19%, -50%);
-      transform:    -moz-translate(19%, -50%);
-      transform:     -ms-translate(19%, -50%);
-      transform:      -o-translate(19%, -50%);
-      transform:         translate(19%, -50%);
+      -webkit-transform: translate(19%, -50%);
+          -ms-transform: translate(19%, -50%);
+              transform: translate(19%, -50%);
       background: rgba(170,1,20,.8);
     }
 
@@ -164,11 +158,9 @@ body {
         top: 50%;
         left: 50%;
         background: #fff;
-        transform: -webkit-translate(35%, -50%);
-        transform:    -moz-translate(35%, -50%);
-        transform:     -ms-translate(35%, -50%);
-        transform:      -o-translate(35%, -50%);
-        transform:         translate(35%, -50%);
+        -webkit-transform: translate(35%, -50%);
+            -ms-transform: translate(35%, -50%);
+                transform: translate(35%, -50%);
         border: 2px solid #aa0114;
         color: #aa0114;
         font-size: 18px;
