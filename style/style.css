@@ -199,6 +199,11 @@ body {
         font-size: 20px;
     }
 
+    .contacts__link {
+        text-decoration: none;
+        color: #000;
+    }
+
 .footer {
     margin-top: 90px;
     height: 45px;
